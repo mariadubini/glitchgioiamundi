@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-
-
 <html> 
   
   <head>
@@ -10,13 +7,15 @@
   
   <body>
     
-     <a-scene>
+     <a-scene background="color: #50b1ec">
        
        <a-assets>
          <img id="socratesinvr" src="https://cdn.glitch.com/d64952be-e838-4c59-bbaa-61d8fcb20607%2FSocrates%20in%20VR.jpg?1547006215683">
+         <a-asset-item id="island" src="https://cdn.glitch.com/5612d843-7976-4a14-891d-0d294246f15a%2FIsland2.glb?1546899916859" response-type="arraybuffer"></a-asset-item>
        </a-assets>
       
-       <a-box position="2 1 -5" width="4" height="4" rotation="0 -25 0" src="#socratesinvr"></a-box>
+       <a-box position="2 1 -6" width="4" height="4" rotation="0 -10 0" src="#socratesinvr"></a-box>
+       <a-gltf-model src="#island"></a-gltf-model>
        
      </a-scene>
     
