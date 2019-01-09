@@ -10,14 +10,13 @@
   
   <body>
     
-     <a-scene background="color: #42bff4">
+     <a-scene>
        
-       <a-box position="0 1 -3" color="green" rotation="0 0 0" radius=".5" 
-       animation__spin="property: rotation; dur: 25000; loop: true; easing: easeOutElastic; to: 0 1490 0; elasticity:200"
-       animation__hover="property: position; dur: 2000; loop: true; dir:alternate; to: 0 1.5 -4.5;">
-           <a-sphere position="-1 1 0" color="orange" rotation="0 0 0" radius=".5" ></a-sphere>
-           <a-sphere position="1 1 0" color="orange" rotation="0 0 0" radius=".5" ></a-sphere>
-       </a-box>
+       <a-assets>
+         <img id="socratesinvr" src="https://cdn.glitch.com/d64952be-e838-4c59-bbaa-61d8fcb20607%2FSocrates%20in%20VR.jpg?1547006215683">
+       </a-assets>
+      
+       <a-box position="2 0 -5" width="4" height="4" rotation="0 -45 0" src="#socratesinvr"></a-box>
        
      </a-scene>
     
