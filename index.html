@@ -15,7 +15,7 @@
          <img id="starsky" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2Fstarry%20night.jpg?1547158907338">
          <img id="picasso" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2FPablo_Picasso_-_Womanwith_a_Mandolin_-_Ermitage%20(1).jpg?1547166417213">
          <img id="bordeauxtheater" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2FOp%C3%A9ra_National_de_Bordeaux%20(1).jpg?1547235572572">
-         <a-asset-item id="earthmodel" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2Fearthmodel.glb?1547181473233"
+         <a-asset-item id="skullmodel" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2Ftriceratops.glb?1547240293607"
                        response-type="arraybuffer"></a-asset-item>
        </a-assets>
       
@@ -42,16 +42,18 @@
        
        
        <a-entity id="globedisplay" position="11 0 -11">
-         <a-box  color="black" width=".5" height="1" depth=".5"></a-box>
-         <a-gltf-model position="0 1.8 0" rotation="0 0 -10" src="#earthmodel" scale=".015 .015 .015"
+         <a-box  color="black" width=".5" height="2" depth="1"></a-box>
+         <a-gltf-model position="0 1.8 0" rotation="0 0 -10" src="#skullmodel" scale=".5 .5 .5"
          animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"
          ></a-gltf-model>
          <a-plane id="globecaption" position="3.9 1 2" rotation="0 -90 0" height=".6" width="auto" color="#191817"
-                  text="value: This 3D model of the Earth was made by Sketchfab Artist Wilmer Osario; width: 3; align: center"
+                  text="value: This 3D model of a Triceratops skull was made by Sketchfab artist MikeBG; width: 3; align: center"
                   ></a-plane>
        </a-entity>
        
-       <a-sphere src="#bordeauxtheater"></a-sphere>
+       <a-sphere position="-10 1.5 -12" src="#bordeauxtheater"          
+       animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"
+       ></a-sphere>
        
        
        
