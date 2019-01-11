@@ -43,8 +43,9 @@
        <a-entity id="globedisplay" position="11 0 -11">
          <a-box  color="black" width=".5" height="1" depth=".5"></a-box>
          <a-gltf-model position="0 1.8 0" rotation="0 0 -10" src="#earthmodel" scale=".015 .015 .015"
-         animation="property: rotation; to: 0 3600 0; easing: easeInOutSine; dur: 36000; loop: true; elasticity: 0"
+         animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"
          ></a-gltf-model>
+         <a-plane id="earthcaption" position="3 0 0" rotation="0 -90 0"></a-plane>
        </a-entity>
        
        
