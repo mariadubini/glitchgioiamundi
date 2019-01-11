@@ -3,6 +3,7 @@
   <head>
     <script src="https://aframe.io/releases/0.8.2/aframe.min.js"> </script>
     <script src="https://unpkg.com/aframe-animation-component@^5.1.2/dist/aframe-animation-component.min.js"></script>
+    <script src="/js/sphereexpand.js"></script>
   </head>
   
   <body>
@@ -51,7 +52,7 @@
                   ></a-plane>
        </a-entity>
        
-       <a-sphere position="-10 1.5 -12" src="#bordeauxtheater"          
+       <a-sphere position="-10 1.5 -12" src="#bordeauxtheater" sphereexpand          
        animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"
        ></a-sphere>
        
