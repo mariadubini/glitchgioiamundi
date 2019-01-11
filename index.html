@@ -10,10 +10,12 @@
      <a-scene >
        
        <a-assets>
-       <img id="woodfloor" src="https://cdn.glitch.com/c388f728-37b7-4af9-af03-1ee7430663e7%2F4727356277_66fb5f938f_o.jpg?1544178281422">
-       <img id="wall" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2F4340689010_68c3b1bbb7_o%20(2).jpg?1547154870021">
-       <img id="starsky" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2Fstarry%20night.jpg?1547158907338">
-       <img id="picasso" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2FPablo_Picasso_-_Womanwith_a_Mandolin_-_Ermitage%20(1).jpg?1547166417213">
+         <img id="woodfloor" src="https://cdn.glitch.com/c388f728-37b7-4af9-af03-1ee7430663e7%2F4727356277_66fb5f938f_o.jpg?1544178281422">
+         <img id="wall" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2F4340689010_68c3b1bbb7_o%20(2).jpg?1547154870021">
+         <img id="starsky" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2Fstarry%20night.jpg?1547158907338">
+         <img id="picasso" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2FPablo_Picasso_-_Womanwith_a_Mandolin_-_Ermitage%20(1).jpg?1547166417213">
+         <a-asset-item id="earthmodel" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2Fearthmodel.glb?1547181473233"
+                       response-type="arraybuffer"></a-asset-item>
        </a-assets>
       
        <a-sky src="#starsky"></a-sky>
@@ -31,8 +33,10 @@
                      color: #faaf52; side:double;"   ></a-plane>
        
        <a-plane position="0 3 -14.9" color="#191817" width="3" height="4">
-       <a-plane src="#picasso" position="0 0 .1" width="2.5" height="3.5"></a-plane>
+         <a-plane src="#picasso" position="0 0 .1" width="2.5" height="3.5"></a-plane>
        </a-plane>
+       
+       <a-gltf-model src="#earthmodel"></a-gltf-model>
        
        
        
