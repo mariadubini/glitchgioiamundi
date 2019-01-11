@@ -3,21 +3,20 @@
     
    init: function () {
      
-     console.log("sphereexpandison");
+      console.log("sphereexpandison");
+
+      let homeworldelements = document.querySelectorAll(".homeworld");
+      let sky = document.querySelector("#skysphere");
+
 
     this.el.addEventListener('click', function () {
 
-    
-      
-      var homeworldelements = document.querySelectorAll(".homeworld");
-      
-      
+      sky.setAttribute("src", "#bordeauxtheater");
       
       homeworldelements.forEach((homeworldelement) => {
-                                 homeworldelement.setAttribute("visible", false)})
+      homeworldelement.setAttribute("visible", false)})
 
-        
-                                
+                                   
     })
    }});
   
