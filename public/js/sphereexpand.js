@@ -9,9 +9,15 @@
 
     
       
-      var homeworldelements = document.querySelectorAll(".baseworld");
-          for (var i = 0; i < homeworldels.length; i++) {
-            homeworldels[i].setAttribute("visible", false);}
+      var homeworldelements = document.querySelectorAll(".homeworld");
       
+      
+      
+      homeworldelements.forEach((homeworldelement) => {
+                                 homeworldelement.setAttribute("visible", false)})
+
+        
+                                
     })
    }});
+  
