@@ -32,12 +32,15 @@
            material="metalness:1; roughness:0; transparent: true; opacity: .7; shader: standard; 
                      color: #faaf52; side:double;"   ></a-plane>
        
-       <a-plane position="0 3 -14.9" color="#191817" width="3" height="4">
-         <a-plane src="#picasso" position="0 0 .1" width="2.5" height="3.5"></a-plane>
-       </a-plane>
+       <a-entity id="picassodisplay" position="0 3 -14.9">
+         <a-plane id="picassoframe" color="#191817" width="3" height="4"></a-plane>
+         <a-plane id="picassopainting" src="#picasso" position="0 0 .1" width="2.5" height="3.5"></a-plane>
+         <a-plane id="picassocaption" position="4 0 0" text="value: Picasso"></a-plane>
+       </a-entity>
        
-       <a-gltf-model position="11 2 -11" rotation="0 0 -10" src="#earthmodel" scale=".015 .015 .015"
-                     animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 15000; loop: true; elasticity: 0"
+       <a-box position="11 0 -11" color="black" width=".5" height="1" depth=".5"></a-box>
+       <a-gltf-model position="11 1.8 -11" rotation="0 0 -10" src="#earthmodel" scale=".015 .015 .015"
+                     animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 20000; loop: true; elasticity: 0"
                      ></a-gltf-model>
        
        
