@@ -55,15 +55,18 @@
          animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"
          ></a-gltf-model>
          <a-plane id="globecaption" position="3.9 1 2" rotation="0 -90 0" height=".6" width="auto" color="#191817"
-                  text="value: This 3D model of a Triceratops skull was made by Sketchfab artist MikeBG; width: 3; align: center"
-                  ></a-plane>
+          text="value: This 3D model of a Triceratops skull was made by Sketchfab artist MikeBG; width: 3; align: center"
+          ></a-plane>
        </a-entity>
        
       <a-entity id="photospheredisplay" position="-10 0 -12">
-          <a-box color="black" width=".5" height="2" depth=".5" ></a-box>
+          <a-box color="black" rotation="0 35 0" width="1" height="2" depth=".5" ></a-box>
           <a-sphere position="0 1.8 0" radius=".7" src="#bordeauxtheater" sphereexpand          
           animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"
           ></a-sphere>
+          <a-plane id="photospherecaption" position="2 1 2" rotation="-35 35 0" height=".6" width="auto" color="#191817"
+          text="value: This photosphere from France was taken by; width: 3; align: center"
+          ></a-plane>
        </a-entity>
        
        
