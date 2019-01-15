@@ -10,16 +10,17 @@
       let sky = document.querySelector("#sky");
       let data = this.data;
 
-
-      this.el.addEventListener('click', sphereloader);
-        
-        
-      var sphereloader = () => {
-        console.log("whynot");
+      let sphereloader = () => {
+      console.log("whynot");
       sky.setAttribute("src", data.spheresource);
       homeworldelements.forEach((homeworldelement) => {
       homeworldelement.setAttribute("visible", false)})
     }
+
+      this.el.addEventListener('click', sphereloader);
+        
+        
+ 
    }});
   
 // Simple example function: 
