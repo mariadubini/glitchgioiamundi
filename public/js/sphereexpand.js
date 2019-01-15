@@ -3,7 +3,6 @@
       spheresource: {type: 'string'}},
     
    init: function () {
-     
 
       let homeworldelements = document.querySelectorAll(".homeworld");
       let sky = document.querySelector("#sky");
@@ -13,7 +12,7 @@
       sky.setAttribute("src", data.spheresource);
       homeworldelements.forEach((homeworldelement) => {
       homeworldelement.setAttribute("visible", false)})
-    }
+      }
 
       this.el.addEventListener('click', sphereloader);
         
