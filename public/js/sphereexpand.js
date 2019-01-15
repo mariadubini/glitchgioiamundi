@@ -11,20 +11,21 @@
       let data = this.data;
 
 
-      this.el.addEventListener('click', () => {
-
-        sky.setAttribute("src", data.spheresource);
-        homeworldelements.forEach((homeworldelement) => {
-        homeworldelement.setAttribute("visible", false)})
-
-                                   
-    })
+      this.el.addEventListener('click', sphereloader);
+        
+        
+      var sphereloader = () => {
+        console.log("whynot");
+      sky.setAttribute("src", data.spheresource);
+      homeworldelements.forEach((homeworldelement) => {
+      homeworldelement.setAttribute("visible", false)})
+    }
    }});
   
-/*
-Simple example function: 
-
-function myFunction(p1, p2) {
-  return p1 * p2;   // The function returns the product of p1 and p2
+// Simple example function: 
+let multiplierfunction = (x, y) => {
+  return x * y;   // The function returns the product of p1 and p2
 }
-*/
+
+multiplierfunction(3, 5);
+console.log(multiplierfunction(3, 5));
