@@ -19,14 +19,6 @@
 
       this.el.addEventListener('click', sphereloader);
         
-        
- 
    }});
   
-// Simple example function: 
-let multiplierfunction = (x, y) => {
-  return x * y;   // The function returns the product of p1 and p2
-}
 
-multiplierfunction(3, 5);
-console.log(multiplierfunction(3, 5));
