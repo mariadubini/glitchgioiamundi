@@ -4,3 +4,7 @@ let addingfunction = (x, y) => {
 }
 
 console.log(addingfunction(3, 5)); //console will log 8
+
+function addingfunctionoldway () {
+
+};
