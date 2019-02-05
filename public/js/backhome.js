@@ -1,15 +1,13 @@
  AFRAME.registerComponent('backhome', {
-  schema: {
-      homespheresource: {type: 'string'}},
+ 
     
    init: function () {
      
       let homeworldelements = document.querySelectorAll(".homeworld");
       let sky = document.querySelector("#sky");
-      let data = this.data;
-
+      
       let gobackhome = () => {
-      sky.setAttribute("src", data.homespheresource);
+      sky.setAttribute("src", "#starsky");
       homeworldelements.forEach((homeworldelement) => {
       homeworldelement.setAttribute("visible", true)})
     }
