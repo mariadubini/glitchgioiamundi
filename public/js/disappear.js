@@ -7,8 +7,10 @@ AFRAME.registerComponent('disappear', {       
     console.log (mynumber);
     console.log (mystring);
     
-    let.disappearfunc=()>{
-      this.el.setAttib
-  }  
+    let disappearfunc=()=>{
+      this.el.setAttribute("visible", false);
+  };
+  this.el.addEventListener('click',disappearfunc);
+}
 
 });
