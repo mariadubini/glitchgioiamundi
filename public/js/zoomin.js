@@ -4,7 +4,7 @@ AFRAME.registerComponent('zoomin', {       
   
        
     let zoominfunc=()=>{
-      this.el.setAttribute("shadow", true);
+      this.el.setAttribute("light", true);
   };
   this.el.addEventListener('click',zoominfunc);
 }
