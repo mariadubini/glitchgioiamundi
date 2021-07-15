@@ -6,6 +6,9 @@ AFRAME.registerComponent('disappear', {       
     let mystring= "my component is awesome.";
     console.log (mynumber);
     console.log (mystring);
+    
+    let.disappearfunc=()>{
+      this.el.setAttib
   }  
 
 });
