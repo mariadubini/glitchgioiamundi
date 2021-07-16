@@ -12,16 +12,16 @@ AFRAME.registerComponent('videoplayer', {
 
       }});
 
-AFRAME.registerComponent('videostopper', {
+AFRAME.registerComponent('videopause', {
   
       init: function () {
         
         let videosource = document.querySelector('#videoclip');
 
-        let videostop = () => {
-        videosource.stop();        
+        let videopause = () => {
+        videosource.pause();        
         }
         
-        this.el.addEventListener('click', videostop);
+        this.el.addEventListener('click', videopause);
 
       }});
