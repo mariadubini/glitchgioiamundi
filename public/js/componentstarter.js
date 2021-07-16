@@ -1,4 +1,4 @@
-AFRAME.registerComponent('songplayer', {       
+AFRAME.registerComponent('equis', {       
   
   init: function () {      
   
