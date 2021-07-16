@@ -23,6 +23,9 @@
          <img id="bordeauxtheater" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2FOp%C3%A9ra_National_de_Bordeaux%20(1).jpg?1547235572572">
          <a-asset-item id="skullmodel" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2Ftriceratops.glb?1547240293607"
          response-type="arraybuffer"></a-asset-item>
+         <audio id="song" src="https://cdn.glitch.com/96ab1f6e-16b9-43c1-9df3-fbe9b24a7490%2FLeft%20and%20Leaving.mp3?1549919550870" preload="auto" crossorigin="anonymous"></audio>
+         <video id="videoclip" autoplay loop="true" src="https://cdn.glitch.com/96ab1f6e-16b9-43c1-9df3-fbe9b24a7490%2FTimelapse%20Video.mp4?1549921266764" crossorigin="anonymous"></video>
+         <video id="spherevidclip" autoplay loop="true" src="https://cdn.glitch.com/96ab1f6e-16b9-43c1-9df3-fbe9b24a7490%2F360%20Timelapse.mp4?1549922819582" crossorigin="anonymous"> </video>
        </a-assets>
              
       <a-entity id="camera" position="0 1.6 0" camera look-controls wasd-controls>
@@ -72,6 +75,36 @@
           text="value: This photosphere from France was taken by Michael Buze; width: 2; wrapCount: 30; align: center"
           ></a-plane>
        </a-entity>
+       
+        <a-entity id="musicpanel" position="-14.9 3 -6" rotation="0 90 0" >
+
+          <a-plane width="2.5" height="3.5" position="0 -.06 0" shader="flat" src="#flowers" side="double"  ></a-plane>
+          <a-plane position="0 -.5 .01" width="2" height=".5" transparent="true" opacity=".9" color="#191817"        
+                   text="value: Artist - Gabriel Baker \n Song - Left and Leaving; width: 4; align:center"></a-plane>
+          
+          <a-plane id="playbox"  depth=".01" scale=".3 .3 .3" position="-.673 -1.22 .01" shader="flat" width="2" height="2"
+          material="color:#191817; shader: flat" transparent="true" opacity=".9">
+             <a-triangle id="playicon" color="white" depth=".01" scale="1 1 1" rotation="0 0 -90" 
+             position=".1 -.02 .06" shader="flat" width="2" height="2" vertex-a="0 .3 0" >
+            </a-triangle>
+         </a-plane> 
+          
+         <a-plane id="stopbox"  scale=".3 .3 .3" position="0 -1.22 .01" shader="flat" width="2" height="2"
+         material="color:#191817; shader: flat" transparent="true" opacity=".9"  >
+             <a-plane id="stopicon" color="white" scale="1 1 1" position="0 0 .06" 
+              shader="flat" width="1" height="1"  >
+            </a-plane>
+         </a-plane>
+
+         <a-plane id="pausebox" scale=".3 .3 .3" position=".673 -1.22 .01" shader="flat" width="2" height="2"
+         material="color:#191817; shader: flat" transparent="true" opacity=".9">
+            <a-plane id="pauseiconleft" color="white" depth=".1" scale="1 1 1" 
+            position="-.4 0 .06" shader="flat" width=".5" height="1"  ></a-plane>
+            <a-plane id="pauseiconright" color="white" depth=".1" scale="1 1 1" 
+            position=".4 0 .06" shader="flat" width=".5" height="1"></a-plane>
+         </a-plane>
+      
+      </a-entity>       
        
        <a-circle id="homebutton" position="0 .1 0" rotation="-90 0 0" backhome></a-circle>
       
