@@ -24,5 +24,19 @@ AFRAME.registerComponent('songplayer', {
         this.el.addEventListener('click', musicstop);
         
       }});
+
+AFRAME.registerComponent('songpauser', {
+      init: function () {
+      
+        let audiosource = document.querySelector('#musicpanel');
+
+        let musicpause = () => {
+        audiosource.components.sound.pauseSound()
+        }
+        
+        this.el.addEventListener('click', musicpause);
+        
+      }});
+    
     
     
