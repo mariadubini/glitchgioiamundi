@@ -1,11 +1,8 @@
-AFRAME.registerComponent('disappear', {       
+AFRAME.registerComponent('songplayer', {       
   
   init: function () {      
   
-    let mynumber = 6;
-    let mystring= "my component is awesome.";
-    console.log (mynumber);
-    console.log (mystring);
+    
   }  
 
 });
