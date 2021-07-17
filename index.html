@@ -78,6 +78,15 @@
           ></a-plane>
        </a-entity>
        
+       <a-entity id="videospheredisplay"  position="-7 0 -12">
+          <a-box class="homeworld" color="black" rotation="0 35 0" width="1" height="2" depth=".5" ></a-box>
+          <a-videosphere id="videosphereentity" position="0 1.8 0" radius=".7" src="#spherevidclip" videosphereexpand      
+          ></a-videosphere>
+          <a-plane id="videospherecaption" class="homeworld" position=".5 .5 .5" rotation="-25 35 0" height=".6" width="auto" color="#191817"
+          text="value: This is a short, equirectangular videosphere; width: 2; wrapCount: 30; align: center"
+          ></a-plane>
+       </a-entity>
+       
         <a-entity id="musicpanel" position="-14.9 3 -6" rotation="0 90 0" sound= "src: #song">
 
           <a-plane width="2.5" height="3.5" position="0 -.06 0" shader="flat" src="#grafitty" side="double"  ></a-plane>
