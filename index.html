@@ -27,7 +27,8 @@
          response-type="arraybuffer"></a-asset-item>
          <audio id="song" src="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2Fy2mate.com%20-%20R%C3%B6yksopp%20%20What%20Else%20Is%20There%20ARTBAT%20Remix.mp3?v=1626463610284" preload="auto" crossorigin="anonymous"></audio>
          <video id="videoclip" autoplay loop="true" src="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2Fsintel.mp4?v=1626463581397" crossorigin="anonymous"></video>
-         <video id="spherevidclip" autoplay loop="true" src="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2Fistockphoto-1250940787-640_adpp_is.mp4?v=1626475860388" crossorigin="anonymous"> </video>
+         <video id="spherevidclip" autoplay loop="true" src="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2F360_VR%20Master%20Series%20_%20Free%20Download%20_%20%20Pebbly%20Beach%20Headland.mp4?v=1626538832866" crossorigin="anonymous"> </video>
+         <video id="videowall" autoplay loop="true" src="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2Fistockphoto-1250940787-640_adpp_is.mp4?v=1626475860388" crossorigin="anonymous"> </video>
        </a-assets>
              
       <a-entity id="camera" position="0 1.6 0" camera look-controls wasd-controls>
@@ -41,7 +42,7 @@
        
       <a-entity id="architecture" class="homeworld">
          <a-plane id="floor" rotation="-90 90 0" width="30" height="30" src="#woodfloor" repeat="4 4" disappear=""></a-plane>
-         <a-plane position="0 5 -15" width="30" height="10" repeat="2 1" src= "#spherevidclip"></a-plane>
+         <a-plane position="0 5 -15" width="30" height="10" repeat="2 1" src= "#videowall"></a-plane>
          <a-plane position="-2.5 5 15" rotation="0 180 0" width="25" height="10" src="#wall" repeat="2 1"></a-plane>
          <a-plane position="-15 5 0" rotation="0 90 0" width="30" height="10" src="#wall" repeat="2 1"></a-plane>
          <a-plane position="15 5 0" rotation="0 -90 0" width="30" height="10" src="#wall" repeat="2 1"></a-plane>
@@ -70,7 +71,7 @@
        
       <a-entity id="photospheredisplay" class="homeworld" position="-10 0 -12">
           <a-box color="black" rotation="0 35 0" width="1" height="2" depth=".5" ></a-box>
-          <a-sphere position="0 1.8 0" radius=".7" src="#spherevidclip" sphereexpand         
+          <a-sphere position="0 1.8 0" radius=".7" src="#bordeauxtheater" sphereexpand         
           animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"
           ></a-sphere>
           <a-plane id="photospherecaption" position=".5 .5 .5" rotation="-25 35 0" height=".6" width="auto" color="#191817"
@@ -87,7 +88,7 @@
           ></a-plane>
        </a-entity>
        
-        <a-entity id="musicpanel" position="-14.9 3 -6" rotation="0 90 0" sound= "src: #song">
+       <a-entity id="musicpanel" position="-14.9 3 -6" rotation="0 90 0" sound= "src: #song">
 
           <a-plane width="2.5" height="3.5" position="0 -.06 0" shader="flat" src="#grafitty" side="double"  ></a-plane>
           <a-plane position="0 -.5 .01" width="2" height=".5" transparent="true" opacity=".9" color="#191817"        

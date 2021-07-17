@@ -1,4 +1,4 @@
-AFRAME.registerComponent('equis', {       
+AFRAME.registerComponent('disappear', {       
   
   init: function () {      
   
